@@ -306,3 +306,188 @@ O SpaceShield aplica conceitos de:
 * Acessibilidade.
 * Identidade visual coerente com o tema proposto.
 
+# ⚙️ Estrutura JavaScript
+
+O projeto utiliza um único arquivo JavaScript responsável por controlar os recursos interativos presentes em todas as páginas do sistema.
+
+## Arquivo
+
+```text
+javascript/
+└── script-index.js
+```
+
+## Responsabilidades
+
+O arquivo JavaScript é responsável por:
+
+* Atualização do horário de Brasília exibido no cabeçalho.
+* Controle do tempo de uso da plataforma.
+* Controle do uptime exibido no rodapé.
+* Atualização dinâmica de indicadores da missão.
+* Registro de eventos nos logs do sistema.
+* Simulação de alterações na telemetria.
+* Planejamento de manobras na tela de alertas.
+* Compartilhamento de informações entre páginas utilizando armazenamento local do navegador.
+
+---
+
+# 📖 Manual de Interatividade
+
+Durante a avaliação do projeto, os seguintes recursos podem ser testados:
+
+## 1. Navegação entre telas
+
+No menu lateral esquerdo:
+
+* Clique em Dashboard.
+* Clique em Missão.
+* Clique em Alertas.
+* Clique em Relatórios.
+* Clique em Configurações.
+
+Resultado esperado:
+
+O sistema navega entre as diferentes páginas mantendo a identidade visual, cabeçalho, rodapé e informações da missão.
+
+---
+
+## 2. Horário em Tempo Real
+
+Localização:
+
+Cabeçalho do sistema.
+
+Resultado esperado:
+
+O horário de Brasília é atualizado automaticamente em tempo real.
+
+---
+
+## 3. Tempo de Uso
+
+Localização:
+
+Cabeçalho do sistema.
+
+Resultado esperado:
+
+O contador inicia automaticamente ao abrir o sistema e continua contando mesmo durante a navegação entre páginas.
+
+---
+
+## 4. Uptime do Sistema
+
+Localização:
+
+Rodapé do sistema.
+
+Resultado esperado:
+
+O tempo de atividade permanece sincronizado com o tempo de uso da plataforma.
+
+---
+
+## 5. Simulação de Telemetria
+
+Localização:
+
+Dashboard → Telemetria em Tempo Real.
+
+Procedimento:
+
+Aguardar aproximadamente 20 segundos após abrir o Dashboard.
+
+Resultado esperado:
+
+O sistema simula uma alteração de temperatura.
+
+Após novo intervalo de tempo, o valor retorna ao estado normal.
+
+Os eventos são registrados automaticamente nos logs.
+
+---
+
+## 6. Logs Recentes
+
+Localização:
+
+Dashboard → Logs Recentes.
+
+Resultado esperado:
+
+Os eventos gerados durante a utilização do sistema são adicionados automaticamente ao histórico de logs.
+
+---
+
+## 7. Planejamento de Manobra
+
+Localização:
+
+Alertas → Alerta de Risco de Colisão → Botão "Planejar Manobra".
+
+Procedimento:
+
+Clique no botão.
+
+Resultado esperado:
+
+O sistema solicita confirmação da operação.
+
+Após a confirmação:
+
+* O alerta é atualizado.
+* Um novo registro é adicionado ao histórico de eventos.
+* A ação fica registrada para consulta posterior.
+
+---
+
+## 8. Histórico de Eventos
+
+Localização:
+
+Alertas → Histórico de Eventos.
+
+Resultado esperado:
+
+Os eventos registrados pelo sistema são exibidos em ordem cronológica.
+
+---
+
+## 9. Relatórios
+
+Localização:
+
+Relatórios → Últimos Eventos Analisados.
+
+Resultado esperado:
+
+Os registros gerados durante a operação do sistema ficam disponíveis para consulta na área de relatórios.
+
+---
+
+## 10. Responsividade
+
+Procedimento:
+
+Abrir as ferramentas do navegador (F12) e ativar o modo responsivo.
+
+Resultado esperado:
+
+O sistema reorganiza seus componentes para diferentes larguras de tela, preservando a legibilidade e a navegação.
+
+---
+
+# ✅ Cenário Recomendado para Avaliação
+
+1. Abrir o Dashboard.
+2. Verificar horário e tempo de uso.
+3. Navegar para Missão.
+4. Navegar para Alertas.
+5. Executar "Planejar Manobra".
+6. Verificar atualização do histórico.
+7. Navegar para Relatórios.
+8. Conferir os eventos registrados.
+9. Navegar para Configurações.
+10. Retornar ao Dashboard e verificar a continuidade dos contadores.
+
