@@ -49,7 +49,7 @@ A tela inicial funciona como o painel principal do sistema.
 
 Ela apresenta:
 
-* Mapa orbital da missão.
+* Mapa orbital da missão. (Feito exclusivamente com Js)
 * Dados do satélite Orbitron.
 * Telemetria em tempo real.
 * Linha do tempo da missão.
