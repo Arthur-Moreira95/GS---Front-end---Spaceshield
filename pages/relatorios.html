@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style-relatorios.css">
+    <title>SpaceShield | Relatórios</title>
+</head>
+<body>
+
+<header>
+    <div class="header-logo">
+        <img src="../assets/images/logo-spaceshield.png" alt="logo spaceshield" class="foto-logo-spaceshield">
+        <div>
+            <h1>SPACESHIELD</h1>
+            <p>MISSÃO: ORBITRON • MODO: ATIVO</p>
+        </div>
+    </div>
+
+    <div class="header-info">
+        <div class="info-box">
+            <span>DATA / HORA (BRASÍLIA)</span>
+            <strong id="hora-brasilia">--:--:--</strong>
+        </div>
+
+        <div class="info-box">
+            <span>TEMPO DE USO</span>
+            <strong id="cronometro">00:00:00</strong>
+        </div>
+
+        <div class="info-box">
+            <span>STATUS DA MISSÃO</span>
+            <strong class="status">NOMINAL</strong>
+        </div>
+    </div>
+
+    <div class="usuario">
+        <img src="../assets/images/user.png" alt="foto do usuário">
+        <div>
+            <span>OPERADOR</span>
+            <strong>Thiago</strong>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="coluna-esquerda">
+        <section class="menu-spaceshield">
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <a href="../index.html">
+                            <img src="../assets/images/dashboard.png" alt="icone dashboard"> Dashboard
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="missao.html">
+                            <img src="../assets/images/missão.png" alt="icone missão"> Missão
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="alertas.html">
+                            <img src="../assets/images/alerta.png" alt="icone alerta"> Alertas
+                        </a>
+                    </li>
+
+                    <li class="ativo">
+                        <a href="relatorios.html">
+                            <img src="../assets/images/report.png" alt="icone relatorio"> Relatórios
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="config.html">
+                            <img src="../assets/images/config.png" alt="icone config"> Configurações
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="card-painel saude-sidebar">
+            <h2>SAÚDE DOS EQUIPAMENTOS</h2>
+
+            <div class="saude-geral">
+                <strong>98%</strong>
+                <span>SAÚDE GERAL</span>
+            </div>
+
+            <div class="sistema">
+                <p>COMUNICAÇÃO <span>NOMINAL</span></p>
+                <p>PROPULSÃO <span>NOMINAL</span></p>
+                <p>ENERGIA <span>NOMINAL</span></p>
+                <p>NAVEGAÇÃO <span>NOMINAL</span></p>
+            </div>
+        </section>
+    </div>
+
+    <section class="conteudo-relatorios">
+
+        <section class="relatorios-topo">
+            <div>
+                <span class="tag-relatorio">ANÁLISE OPERACIONAL</span>
+                <h2>RELATÓRIOS DA MISSÃO</h2>
+                <p>
+                    Painel de análise com dados da missão Orbitron, registros operacionais,
+                    alertas, desempenho dos sistemas e eventos críticos.
+                </p>
+            </div>
+
+            <button class="btn-exportar">EXPORTAR RELATÓRIO</button>
+        </section>
+
+        <section class="resumo-relatorios">
+            <div class="resumo-card">
+                <span>EVENTOS REGISTRADOS</span>
+                <strong>128</strong>
+                <p>Últimas 24h</p>
+            </div>
+
+            <div class="resumo-card">
+                <span>ALERTAS CRÍTICOS</span>
+                <strong class="risco-texto">04</strong>
+                <p>Em acompanhamento</p>
+            </div>
+
+            <div class="resumo-card">
+                <span>OBJETOS MONITORADOS</span>
+                <strong>37</strong>
+                <p>Dentro do alcance</p>
+            </div>
+
+            <div class="resumo-card">
+                <span>EFICIÊNCIA DO SISTEMA</span>
+                <strong class="seguro-texto">98%</strong>
+                <p>Operação nominal</p>
+            </div>
+        </section>
+
+        <section class="relatorios-grid">
+
+            <article class="grafico-card">
+                <div class="card-topo">
+                    <h3>ALERTAS POR NÍVEL</h3>
+                    <span>24H</span>
+                </div>
+
+                <div class="barras">
+                    <div class="barra-item">
+                        <span>Crítico</span>
+                        <div class="barra-fundo">
+                            <div class="barra barra-risco"></div>
+                        </div>
+                        <strong>18%</strong>
+                    </div>
+
+                    <div class="barra-item">
+                        <span>Atenção</span>
+                        <div class="barra-fundo">
+                            <div class="barra barra-atencao"></div>
+                        </div>
+                        <strong>42%</strong>
+                    </div>
+
+                    <div class="barra-item">
+                        <span>Info</span>
+                        <div class="barra-fundo">
+                            <div class="barra barra-info"></div>
+                        </div>
+                        <strong>40%</strong>
+                    </div>
+                </div>
+            </article>
+
+            <article class="grafico-card">
+                <div class="card-topo">
+                    <h3>DESEMPENHO DOS SISTEMAS</h3>
+                    <span>ATUAL</span>
+                </div>
+
+                <div class="sistemas-relatorio">
+                    <p>Comunicação <strong>99%</strong></p>
+                    <p>Propulsão <strong>97%</strong></p>
+                    <p>Energia <strong>100%</strong></p>
+                    <p>Navegação <strong>98%</strong></p>
+                </div>
+            </article>
+
+            <article class="grafico-card grafico-linha-card">
+                <div class="card-topo">
+                    <h3>TELEMETRIA CONSOLIDADA</h3>
+                    <span>SIMULAÇÃO</span>
+                </div>
+
+                <div class="linha-grafico"></div>
+
+                <div class="legenda-grafico">
+                    <span>Velocidade</span>
+                    <span>Altitude</span>
+                    <span>Energia</span>
+                </div>
+            </article>
+
+            <article class="grafico-card">
+                <div class="card-topo">
+                    <h3>RELATÓRIOS GERADOS</h3>
+                    <span>TOTAL: 5</span>
+                </div>
+
+                <div class="lista-relatorios">
+                    <div>
+                        <strong>Relatório Orbital</strong>
+                        <span>Gerado às 14:32</span>
+                    </div>
+
+                    <div>
+                        <strong>Análise de Risco</strong>
+                        <span>Gerado às 14:28</span>
+                    </div>
+
+                    <div>
+                        <strong>Saúde dos Sistemas</strong>
+                        <span>Gerado às 14:15</span>
+                    </div>
+
+                    <div>
+                        <strong>Log de Telemetria</strong>
+                        <span>Gerado às 14:00</span>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+
+        <section class="tabela-eventos">
+            <h2>ÚLTIMOS EVENTOS ANALISADOS</h2>
+
+            <div class="linha-evento cabecalho">
+                <span>HORÁRIO</span>
+                <span>TIPO</span>
+                <span>ORIGEM</span>
+                <span>STATUS</span>
+            </div>
+
+            <div class="linha-evento">
+                <span>14:32:08</span>
+                <strong class="risco-texto">RISCO</strong>
+                <span>OBJ-4821</span>
+                <span>Monitorando</span>
+            </div>
+
+            <div class="linha-evento">
+                <span>14:32:01</span>
+                <strong class="atencao-texto">ATENÇÃO</strong>
+                <span>Módulo de carga</span>
+                <span>Observação</span>
+            </div>
+
+            <div class="linha-evento">
+                <span>14:31:59</span>
+                <strong class="info-texto">INFO</strong>
+                <span>Energia</span>
+                <span>Nominal</span>
+            </div>
+
+            <div class="linha-evento">
+                <span>14:31:45</span>
+                <strong class="info-texto">INFO</strong>
+                <span>Navegação</span>
+                <span>Concluído</span>
+            </div>
+        </section>
+
+    </section>
+</main>
+
+<footer class="footer-spaceshield">
+    <span>SPACESHIELD v1.1.0</span>
+
+    <span class="footer-status">SISTEMA OPERACIONAL</span>
+
+    <span>
+        🔗 LINK:
+        <strong>ESTÁVEL</strong>
+    </span>
+
+    <span>
+        📶 UPTIME:
+        <strong id="uptime">00:00:00</strong>
+    </span>
+
+    <span>👤 USUÁRIOS CONECTADOS: 3</span>
+
+    <button class="footer-btn">CENTRO DE CONTROLE</button>
+</footer>
+
+<script src="../javascript/script-index.js"></script>
+</body>
+</html>

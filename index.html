@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style-index.css">
+    <title>Spaceshield</title>
+</head>
+<body>
+    <header>
+        <div class="header-logo">
+        <img src="/assets/images/logo-spaceshield.png" alt="logo spaceshield" class="foto-logo-spaceshield">
+        <div>
+            <h1>SPACESHIELD</h1>
+            <p>MISSÃO: ORBITRON • MODO: ATIVO</p>
+        </div>
+    </div>
+
+    <div class="header-info">
+        <div class="info-box">
+            <span>DATA / HORA (BRASÍLIA)</span>
+            <strong id="hora-brasilia">--:--:--</strong>
+        </div>
+
+        <div class="info-box">
+            <span>TEMPO DE USO</span>
+            <strong id="cronometro">00:00:00</strong>
+        </div>
+
+        <div class="info-box">
+            <span>STATUS DA MISSÃO</span>
+            <strong class="status">NOMINAL</strong>
+        </div>
+    </div>
+
+    <div class="usuario">
+        <img src="/assets/images/user.png" alt="foto do usuário">
+        <div>
+            <span>OPERADOR</span>
+            <strong>Thiago</strong>
+        </div>
+    </div>
+    </header>
+    <main>
+        <div class="coluna-esquerda">
+        <section class="menu-spaceshield">
+            <nav>
+                <ul class="menu">
+                    <li class="ativo">
+                        <a href="/index.html">
+                        <img src="/assets/images/dashboard.png" alt="icone dashboard"> Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="/pages/missao.html"> 
+                        <img src="/assets/images/missão.png" alt="icone missão"> Missão</a>
+                    </li>
+
+                    <li>
+                        <a href="/pages/alertas.html">
+                        <img src="/assets/images/alerta.png" alt="icone alerta"> Alertas</a>
+                    </li>
+
+                    <li>
+                        <a href="/pages/relatorios.html"> 
+                        <img src="/assets/images/report.png" alt="icone relatorio"> Relatórios</a>
+                    </li>
+
+                    <li>
+                        <a href="/pages/config.html">
+                        <img src="/assets/images/config.png" alt="icone config"> Configurações</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        
+            <section class="card-painel saude-sidebar">
+                <h2>SAÚDE DOS EQUIPAMENTOS</h2>
+
+                <div class="saude-geral">
+                    <strong>98%</strong>
+                    <span>SAÚDE GERAL</span>
+                </div>
+
+                <div class="sistema">
+                    <p>COMUNICAÇÃO <span>NOMINAL</span></p>
+                    <p>PROPULSÃO <span>NOMINAL</span></p>
+                    <p>ENERGIA <span>NOMINAL</span></p>
+                    <p>NAVEGAÇÃO <span>NOMINAL</span></p>
+                </div>
+            </section>
+                </div>
+            
+            <div class="conteudo-central">
+        <section class="mapa-orbital">
+            <div class="mapa-topo">
+                <h2>MAPA ORBITAL • VISÃO GERAL</h2>
+            </div>
+
+            <div class="mapa-conteudo">
+                <div class="dados-satelite">
+                    <h3>ORBITRON</h3>
+
+                    <p>ALTITUDE</p>
+                    <strong>512.4 km</strong>
+
+                    <p>VELOCIDADE</p>
+                    <strong>7.67 km/s</strong>
+
+                    <p>STATUS</p>
+                    <strong class="status-satelite">NOMINAL</strong>
+                </div>
+
+                <canvas id="orbitalCanvas"></canvas>
+            </div>
+
+            <div class="mapa-controles">
+                <button id="zoomIn">+</button>
+                <button id="zoomOut">−</button>
+                <button id="centralizarMapa">CENTRALIZAR</button>
+            </div>
+        </section>
+        <section class="telemetria">
+        <h2>TELEMETRIA EM TEMPO REAL</h2>
+
+        <div class="telemetria-grid">
+
+            <div class="telemetria-card">
+                <span>VELOCIDADE</span>
+                <strong>7.67</strong>
+                <p>km/s</p>
+                <div class="grafico"></div>
+            </div>
+
+            <div class="telemetria-card">
+                <span>ALTITUDE</span>
+                <strong>512.4</strong>
+                <p>km</p>
+                <div class="grafico"></div>
+            </div>
+
+            <div class="telemetria-card">
+                <span>ENERGIA</span>
+                <strong>100</strong>
+                <p>%</p>
+                <div class="grafico grafico-verde"></div>
+            </div>
+
+            <div class="telemetria-card">
+                <span>TEMPERATURA</span>
+                <strong>23.6</strong>
+                <p>°C</p>
+                <div class="grafico"></div>
+            </div>
+
+            <div class="telemetria-card">
+                <span>PRESSÃO</span>
+                <strong>101.3</strong>
+                <p>kPa</p>
+                <div class="grafico"></div>
+            </div>
+
+            <div class="telemetria-card">
+                <span>COMBUSTÍVEL</span>
+                <strong>78</strong>
+                <p>%</p>
+                <div class="grafico"></div>
+            </div>
+
+                </div>
+            </section>
+            <section class="timeline-missao">
+
+    <h2>LINHA DO TEMPO DA MISSÃO</h2>
+
+    <div class="timeline">
+
+        <div class="evento">
+            <span>LANÇAMENTO</span>
+            <small>T+00:00:00</small>
+            <div class="ponto azul"></div>
+        </div>
+
+        <div class="evento">
+            <span>INSERÇÃO ORBITAL</span>
+            <small>T+00:12:22</small>
+            <div class="ponto azul"></div>
+        </div>
+
+        <div class="evento">
+            <span>ATIVAÇÃO SISTEMAS</span>
+            <small>T+00:45:22</small>
+            <div class="ponto azul"></div>
+        </div>
+
+        <div class="evento">
+            <span>ÓRBITA COMPLETA</span>
+            <small>T+00:45:18</small>
+            <div class="ponto verde"></div>
+        </div>
+
+        <div class="evento">
+            <span>TODOS SISTEMAS NOMINAIS</span>
+            <small>T+02:10:45</small>
+            <div class="ponto verde"></div>
+        </div>
+
+        <div class="evento">
+            <span class="evento-risco">
+                RISCO DE COLISÃO OBJ-4821
+            </span>
+
+            <small class="evento-risco">
+                T+02:16:45
+            </small>
+
+            <div class="ponto vermelho"></div>
+        </div>
+
+    </div>
+
+</section>
+            </div>
+
+        <aside class="painel-direito">
+
+            <section class="card-painel">
+                <div class="card-topo">
+                    <h2>ALERTAS ATIVOS</h2>
+                    <span>VER TODOS (3)</span>
+                </div>
+
+                <div class="alerta-card risco">
+                    <strong>RISCO DE COLISÃO</strong>
+                    <p>OBJ-4821</p>
+                    <span>TCA 00:12:47</span>
+                </div>
+
+                <div class="alerta-card atencao">
+                    <strong>ATENÇÃO</strong>
+                    <p>OBJ-7391</p>
+                    <span>DISTÂNCIA 4.78 km</span>
+                </div>
+
+                <div class="alerta-card temperatura">
+                    <strong>VARIAÇÃO DE TEMPERATURA</strong>
+                    <p>MÓDULO DE CARGA</p>
+                    <span>Δ 3.6°C</span>
+                </div>
+            </section>
+
+            <section class="card-painel">
+                <div class="card-topo">
+                    <h2>RADAR • OBJETOS PRÓXIMOS</h2>
+                    <span>ALCANCE: 100 km</span>
+                </div>
+
+                <div class="radar">
+                    <div class="ponto-radar ponto-risco"></div>
+                    <div class="ponto-radar ponto-atencao"></div>
+                    <div class="ponto-radar ponto-seguro"></div>
+                </div>
+
+                <div class="lista-radar">
+                    <p><strong>OBJ-4821</strong> <span class="risco-texto">RISCO</span></p>
+                    <p><strong>OBJ-7391</strong> <span class="atencao-texto">ATENÇÃO</span></p>
+                    <p><strong>OBJ-1287</strong> <span class="seguro-texto">SEGURO</span></p>
+                </div>
+            </section>
+            <section class="card-painel logs-recentes">
+
+            <h2>LOGS RECENTES</h2>
+
+            <div class="log-item">
+                <span class="hora">14:32:08</span>
+                <span class="alerta-log">ALERTA</span>
+                <span class="mensagem">
+                    Risco de colisão com OBJ-4821. TCA em 12:47.
+                </span>
+            </div>
+
+            <div class="log-item">
+                <span class="hora">14:32:01</span>
+                <span class="atencao-log">ATENÇÃO</span>
+                <span class="mensagem">
+                    Variação de temperatura no módulo de carga.
+                </span>
+            </div>
+
+            <div class="log-item">
+                <span class="hora">14:31:59</span>
+                <span class="info-log">INFO</span>
+                <span class="mensagem">
+                    Telemetria de energia normal.
+                </span>
+            </div>
+
+            <div class="log-item">
+                <span class="hora">14:31:45</span>
+                <span class="info-log">INFO</span>
+                <span class="mensagem">
+                    Ajuste de atitude concluído.
+                </span>
+            </div>
+
+            <a href="#" class="ver-logs">VER TODOS OS LOGS</a>
+
+            </section>
+        </aside>
+    </main>
+<footer class="footer-spaceshield">
+
+    <span>SPACESHIELD v1.1.0</span>
+
+    <span class="footer-status">
+        SISTEMA OPERACIONAL
+    </span>
+
+    <span>
+        🔗 LINK:
+        <strong>ESTÁVEL</strong>
+    </span>
+
+    <span>
+    📶 UPTIME:
+    <strong id="uptime">00:00:00</strong>
+    </span>
+
+    <span>
+        👤 USUÁRIOS CONECTADOS: 3
+    </span>
+
+    <button class="footer-btn">
+        CENTRO DE CONTROLE
+    </button>
+
+</footer>
+<script src="javascript/script-index.js"></script>
+</body>
+</html>

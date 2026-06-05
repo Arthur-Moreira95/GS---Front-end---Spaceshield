@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style-config.css">
+    <title>SpaceShield | Configurações</title>
+</head>
+<body>
+
+<header>
+    <div class="header-logo">
+        <img src="../assets/images/logo-spaceshield.png" alt="logo spaceshield" class="foto-logo-spaceshield">
+        <div>
+            <h1>SPACESHIELD</h1>
+            <p>MISSÃO: ORBITRON • MODO: ATIVO</p>
+        </div>
+    </div>
+
+    <div class="header-info">
+        <div class="info-box">
+            <span>DATA / HORA (BRASÍLIA)</span>
+            <strong id="hora-brasilia">--:--:--</strong>
+        </div>
+
+        <div class="info-box">
+            <span>TEMPO DE USO</span>
+            <strong id="cronometro">00:00:00</strong>
+        </div>
+
+        <div class="info-box">
+            <span>STATUS DA MISSÃO</span>
+            <strong class="status">NOMINAL</strong>
+        </div>
+    </div>
+
+    <div class="usuario">
+        <img src="../assets/images/user.png" alt="foto do usuário">
+        <div>
+            <span>OPERADOR</span>
+            <strong>Thiago</strong>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="coluna-esquerda">
+        <section class="menu-spaceshield">
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <a href="../index.html">
+                            <img src="../assets/images/dashboard.png" alt="icone dashboard"> Dashboard
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="missao.html">
+                            <img src="../assets/images/missão.png" alt="icone missão"> Missão
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="alertas.html">
+                            <img src="../assets/images/alerta.png" alt="icone alerta"> Alertas
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="relatorios.html">
+                            <img src="../assets/images/report.png" alt="icone relatorio"> Relatórios
+                        </a>
+                    </li>
+
+                    <li class="ativo">
+                        <a href="config.html">
+                            <img src="../assets/images/config.png" alt="icone config"> Configurações
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="card-painel saude-sidebar">
+            <h2>SAÚDE DOS EQUIPAMENTOS</h2>
+
+            <div class="saude-geral">
+                <strong>98%</strong>
+                <span>SAÚDE GERAL</span>
+            </div>
+
+            <div class="sistema">
+                <p>COMUNICAÇÃO <span>NOMINAL</span></p>
+                <p>PROPULSÃO <span>NOMINAL</span></p>
+                <p>ENERGIA <span>NOMINAL</span></p>
+                <p>NAVEGAÇÃO <span>NOMINAL</span></p>
+            </div>
+        </section>
+    </div>
+
+    <section class="conteudo-config">
+
+        <section class="config-topo">
+            <div>
+                <span class="tag-config">PAINEL DO SISTEMA</span>
+                <h2>CONFIGURAÇÕES</h2>
+                <p>
+                    Ajustes operacionais do SpaceShield, informações do operador,
+                    preferências de interface e parâmetros de monitoramento da missão.
+                </p>
+            </div>
+
+            <div class="perfil-operador">
+                <img src="../assets/images/user.png" alt="foto do operador">
+                <div>
+                    <span>OPERADOR ATUAL</span>
+                    <strong>Thiago</strong>
+                    <p>Nível de acesso: Controle orbital</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="config-grid">
+
+            <article class="config-card">
+                <h3>PERFIL DO OPERADOR</h3>
+
+                <label>Nome do operador</label>
+                <input type="text" value="Thiago">
+
+                <label>Código de identificação</label>
+                <input type="text" value="OP-2048">
+
+                <label>Setor</label>
+                <select>
+                    <option>Controle orbital</option>
+                    <option>Telemetria</option>
+                    <option>Segurança da missão</option>
+                </select>
+
+                <button>SALVAR PERFIL</button>
+            </article>
+
+            <article class="config-card">
+                <h3>PARÂMETROS DA MISSÃO</h3>
+
+                <div class="config-linha">
+                    <span>Modo de operação</span>
+                    <strong>Ativo</strong>
+                </div>
+
+                <div class="config-linha">
+                    <span>Satélite monitorado</span>
+                    <strong>Orbitron</strong>
+                </div>
+
+                <div class="config-linha">
+                    <span>Alcance do radar</span>
+                    <strong>100 km</strong>
+                </div>
+
+                <div class="config-linha">
+                    <span>Intervalo de telemetria</span>
+                    <strong>1s</strong>
+                </div>
+
+                <button>ATUALIZAR MISSÃO</button>
+            </article>
+
+            <article class="config-card">
+                <h3>ALERTAS E SEGURANÇA</h3>
+
+                <div class="toggle-linha">
+                    <div>
+                        <strong>Alertas críticos</strong>
+                        <span>Notificar riscos de colisão</span>
+                    </div>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+
+                <div class="toggle-linha">
+                    <div>
+                        <strong>Alertas sonoros</strong>
+                        <span>Sinal sonoro para eventos graves</span>
+                    </div>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+
+                <div class="toggle-linha">
+                    <div>
+                        <strong>Logs automáticos</strong>
+                        <span>Registrar eventos em tempo real</span>
+                    </div>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </article>
+
+            <article class="config-card">
+                <h3>INTERFACE</h3>
+
+                <div class="tema-opcoes">
+                    <button class="tema ativo-tema">DARK</button>
+                    <button class="tema">BLUE</button>
+                    <button class="tema">HIGH CONTRAST</button>
+                </div>
+
+                <div class="config-linha">
+                    <span>Fonte principal</span>
+                    <strong>Inter</strong>
+                </div>
+
+                <div class="config-linha">
+                    <span>Fonte técnica</span>
+                    <strong>Orbitron</strong>
+                </div>
+
+                <div class="config-linha">
+                    <span>Idioma</span>
+                    <strong>PT-BR</strong>
+                </div>
+            </article>
+
+        </section>
+
+        <section class="sistema-config">
+            <h2>STATUS DO SISTEMA</h2>
+
+            <div class="status-grid">
+                <div>
+                    <span>Servidor</span>
+                    <strong class="seguro-texto">Online</strong>
+                </div>
+
+                <div>
+                    <span>Link orbital</span>
+                    <strong class="seguro-texto">Estável</strong>
+                </div>
+
+                <div>
+                    <span>Banco de logs</span>
+                    <strong class="seguro-texto">Sincronizado</strong>
+                </div>
+
+                <div>
+                    <span>Última verificação</span>
+                    <strong>Agora</strong>
+                </div>
+            </div>
+        </section>
+
+    </section>
+</main>
+
+<footer class="footer-spaceshield">
+    <span>SPACESHIELD v1.1.0</span>
+
+    <span class="footer-status">SISTEMA OPERACIONAL</span>
+
+    <span>
+        🔗 LINK:
+        <strong>ESTÁVEL</strong>
+    </span>
+
+    <span>
+        📶 UPTIME:
+        <strong id="uptime">00:00:00</strong>
+    </span>
+
+    <span>👤 USUÁRIOS CONECTADOS: 3</span>
+
+    <button class="footer-btn">CENTRO DE CONTROLE</button>
+</footer>
+
+<script src="../javascript/script-index.js"></script>
+</body>
+</html>

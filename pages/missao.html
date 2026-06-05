@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style-missao.css">
+    <title>SpaceShield | Missão</title>
+</head>
+<body>
+
+<header>
+    <div class="header-logo">
+        <img src="../assets/images/logo-spaceshield.png" alt="logo spaceshield" class="foto-logo-spaceshield">
+        <div>
+            <h1>SPACESHIELD</h1>
+            <p>MISSÃO: ORBITRON • MODO: ATIVO</p>
+        </div>
+    </div>
+
+    <div class="header-info">
+        <div class="info-box">
+            <span>DATA / HORA (BRASÍLIA)</span>
+            <strong id="hora-brasilia">--:--:--</strong>
+        </div>
+
+        <div class="info-box">
+            <span>TEMPO DE USO</span>
+            <strong id="cronometro">00:00:00</strong>
+        </div>
+
+        <div class="info-box">
+            <span>STATUS DA MISSÃO</span>
+            <strong class="status">NOMINAL</strong>
+        </div>
+    </div>
+
+    <div class="usuario">
+        <img src="../assets/images/user.png" alt="foto do usuário">
+        <div>
+            <span>OPERADOR</span>
+            <strong>Thiago</strong>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="coluna-esquerda">
+        <section class="menu-spaceshield">
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <a href="../index.html">
+                            <img src="/assets/images/dashboard.png" alt="icone dashboard"> Dashboard
+                        </a>
+                    </li>
+
+                    <li class="ativo">
+                        <a href="missao.html">
+                            <img src="../assets/images/missão.png" alt="icone missão"> Missão
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="alertas.html">
+                            <img src="../assets/images/alerta.png" alt="icone alerta"> Alertas
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="relatorios.html">
+                            <img src="../assets/images/report.png" alt="icone relatorio"> Relatórios
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="config.html">
+                            <img src="../assets/images/config.png" alt="icone config"> Configurações
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        
+        <section class="card-painel saude-sidebar">
+            <h2>SAÚDE DOS EQUIPAMENTOS</h2>
+
+            <div class="saude-geral">
+                <strong>98%</strong>
+                <span>SAÚDE GERAL</span>
+            </div>
+
+            <div class="sistema">
+                <p>COMUNICAÇÃO <span>NOMINAL</span></p>
+                <p>PROPULSÃO <span>NOMINAL</span></p>
+                <p>ENERGIA <span>NOMINAL</span></p>
+                <p>NAVEGAÇÃO <span>NOMINAL</span></p>
+            </div>
+        </section>
+    </div>
+
+    <section class="conteudo-missao">
+
+        <section class="missao-hero">
+            <div>
+                <span class="tag-missao">MISSÃO ATUAL</span>
+                <h2>ORBITRON</h2>
+                <p>
+                    Sistema de monitoramento orbital responsável por acompanhar o satélite,
+                    analisar sua trajetória e identificar objetos próximos que possam representar risco.
+                </p>
+            </div>
+
+            <div class="missao-status-card">
+                <span>STATUS</span>
+                <strong>NOMINAL</strong>
+                <p>Operação estável</p>
+            </div>
+        </section>
+
+        <section class="missao-grid">
+
+            <div class="missao-card">
+                <h3>OBJETIVO DA MISSÃO</h3>
+                <p>
+                    Detectar aproximações perigosas, monitorar altitude e velocidade,
+                    e apoiar decisões de manobra preventiva em tempo real.
+                </p>
+            </div>
+
+            <div class="missao-card">
+                <h3>DADOS ORBITAIS</h3>
+                <p>Altitude: <strong>512.4 km</strong></p>
+                <p>Velocidade: <strong>7.67 km/s</strong></p>
+                <p>Inclinação: <strong>97.6°</strong></p>
+            </div>
+
+            <div class="missao-card">
+                <h3>SATÉLITE MONITORADO</h3>
+                <p>Nome: <strong>ORBITRON</strong></p>
+                <p>Classe: <strong>LEO</strong></p>
+                <p>Modo: <strong>Ativo</strong></p>
+            </div>
+
+            <div class="missao-card alerta-missao">
+                <h3>RISCO ATUAL</h3>
+                <p>Objeto: <strong>OBJ-4821</strong></p>
+                <p>Distância: <strong>1.245 km</strong></p>
+                <p>Tempo estimado: <strong>00:12:47</strong></p>
+            </div>
+
+        </section>
+
+        <section class="timeline-detalhada">
+            <h2>ETAPAS DA MISSÃO</h2>
+
+            <div class="etapa">
+                <span class="bolinha azul"></span>
+                <div>
+                    <strong>Lançamento</strong>
+                    <p>Início da operação e ativação dos sistemas principais.</p>
+                </div>
+            </div>
+
+            <div class="etapa">
+                <span class="bolinha azul"></span>
+                <div>
+                    <strong>Inserção orbital</strong>
+                    <p>Satélite posicionado em órbita baixa da Terra.</p>
+                </div>
+            </div>
+
+            <div class="etapa">
+                <span class="bolinha verde"></span>
+                <div>
+                    <strong>Sistemas nominais</strong>
+                    <p>Comunicação, energia, navegação e propulsão funcionando normalmente.</p>
+                </div>
+            </div>
+
+            <div class="etapa">
+                <span class="bolinha vermelho"></span>
+                <div>
+                    <strong>Monitoramento de risco</strong>
+                    <p>Objeto OBJ-4821 em acompanhamento preventivo.</p>
+                </div>
+            </div>
+        </section>
+
+    </section>
+</main>
+
+<footer class="footer-spaceshield">
+    <span>SPACESHIELD v1.1.0</span>
+
+    <span class="footer-status">
+        SISTEMA OPERACIONAL
+    </span>
+
+    <span>
+        🔗 LINK:
+        <strong>ESTÁVEL</strong>
+    </span>
+
+    <span>
+        📶 UPTIME:
+        <strong id="uptime">00:00:00</strong>
+    </span>
+
+    <span>
+        👤 USUÁRIOS CONECTADOS: 3
+    </span>
+
+    <button class="footer-btn">
+        CENTRO DE CONTROLE
+    </button>
+</footer>
+
+<script src="../javascript/script-index.js"></script>
+</body>
+</html>

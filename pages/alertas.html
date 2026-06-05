@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style-alertas.css">
+    <title>SpaceShield | Alertas</title>
+</head>
+<body>
+
+<header>
+    <div class="header-logo">
+        <img src="../assets/images/logo-spaceshield.png" alt="logo spaceshield" class="foto-logo-spaceshield">
+        <div>
+            <h1>SPACESHIELD</h1>
+            <p>MISSÃO: ORBITRON • MODO: ATIVO</p>
+        </div>
+    </div>
+
+    <div class="header-info">
+        <div class="info-box">
+            <span>DATA / HORA (BRASÍLIA)</span>
+            <strong id="hora-brasilia">--:--:--</strong>
+        </div>
+
+        <div class="info-box">
+            <span>TEMPO DE USO</span>
+            <strong id="cronometro">00:00:00</strong>
+        </div>
+
+        <div class="info-box">
+            <span>STATUS DA MISSÃO</span>
+            <strong class="status">NOMINAL</strong>
+        </div>
+    </div>
+
+    <div class="usuario">
+        <img src="../assets/images/user.png" alt="foto do usuário">
+        <div>
+            <span>OPERADOR</span>
+            <strong>Thiago</strong>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="coluna-esquerda">
+        <section class="menu-spaceshield">
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <a href="../index.html">
+                            <img src="../assets/images/dashboard.png" alt="icone dashboard"> Dashboard
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="missao.html">
+                            <img src="../assets/images/missão.png" alt="icone missão"> Missão
+                        </a>
+                    </li>
+
+                    <li class="ativo">
+                        <a href="alertas.html">
+                            <img src="../assets/images/alerta.png" alt="icone alerta"> Alertas
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="relatorios.html">
+                            <img src="../assets/images/report.png" alt="icone relatorio"> Relatórios
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="config.html">
+                            <img src="../assets/images/config.png" alt="icone config"> Configurações
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            </section>
+            <section class="card-painel saude-sidebar">
+        <h2>SAÚDE DOS EQUIPAMENTOS</h2>
+
+        <div class="saude-geral">
+            <strong>98%</strong>
+            <span>SAÚDE GERAL</span>
+        </div>
+
+        <div class="sistema">
+            <p>COMUNICAÇÃO <span>NOMINAL</span></p>
+            <p>PROPULSÃO <span>NOMINAL</span></p>
+            <p>ENERGIA <span>NOMINAL</span></p>
+            <p>NAVEGAÇÃO <span>NOMINAL</span></p>
+        </div>
+            </section>
+    </div>
+
+    <section class="conteudo-alertas">
+
+        <section class="alertas-topo">
+            <div>
+                <span class="tag-alerta">MONITORAMENTO DE RISCOS</span>
+                <h2>ALERTAS DA MISSÃO</h2>
+                <p>Lista completa dos eventos críticos, avisos operacionais e informações do sistema SpaceShield.</p>
+            </div>
+
+            <div class="resumo-alertas">
+                <div>
+                    <strong>03</strong>
+                    <span>Alertas ativos</span>
+                </div>
+
+                <div>
+                    <strong class="risco-texto">01</strong>
+                    <span>Risco crítico</span>
+                </div>
+
+                <div>
+                    <strong class="atencao-texto">02</strong>
+                    <span>Atenções</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="alertas-grid">
+
+            <article class="alerta-card alerta-risco">
+                <div class="alerta-icone">⚠</div>
+
+                <div class="alerta-info">
+                    <span class="nivel risco-texto">RISCO DE COLISÃO</span>
+                    <h3>OBJ-4821</h3>
+                    <p>Objeto detectado em rota de aproximação com o satélite Orbitron.</p>
+
+                    <div class="alerta-dados">
+                        <span>Distância: <strong>1.245 km</strong></span>
+                        <span>TCA: <strong>00:12:47</strong></span>
+                        <span>Status: <strong>Monitorando</strong></span>
+                    </div>
+                </div>
+
+                <button id="btn-planejar-manobra">PLANEJAR MANOBRA</button>
+            </article>
+
+            <article class="alerta-card alerta-atencao">
+                <div class="alerta-icone">△</div>
+
+                <div class="alerta-info">
+                    <span class="nivel atencao-texto">ATENÇÃO</span>
+                    <h3>OBJ-7391</h3>
+                    <p>Objeto próximo dentro da zona de monitoramento preventivo.</p>
+
+                    <div class="alerta-dados">
+                        <span>Distância: <strong>4.78 km</strong></span>
+                        <span>Velocidade relativa: <strong>1.12 km/s</strong></span>
+                        <span>Status: <strong>Estável</strong></span>
+                    </div>
+                </div>
+
+                <button>ANALISAR OBJETO</button>
+            </article>
+
+            <article class="alerta-card alerta-atencao">
+                <div class="alerta-icone">℃</div>
+
+                <div class="alerta-info">
+                    <span class="nivel atencao-texto">VARIAÇÃO DE TEMPERATURA</span>
+                    <h3>MÓDULO DE CARGA</h3>
+                    <p>Oscilação térmica detectada acima do padrão esperado.</p>
+
+                    <div class="alerta-dados">
+                        <span>Variação: <strong>Δ 3.6°C</strong></span>
+                        <span>Sistema: <strong>Controle térmico</strong></span>
+                        <span>Status: <strong>Observação</strong></span>
+                    </div>
+                </div>
+
+                <button>VER TELEMETRIA</button>
+            </article>
+
+        </section>
+
+        <section class="historico-alertas">
+            <h2>HISTÓRICO DE EVENTOS</h2>
+
+            <div class="linha-historico">
+                <span>14:32:08</span>
+                <strong class="risco-texto">ALERTA</strong>
+                <p>Risco de colisão com OBJ-4821. TCA em 12:47.</p>
+            </div>
+
+            <div class="linha-historico">
+                <span>14:32:01</span>
+                <strong class="atencao-texto">ATENÇÃO</strong>
+                <p>Variação de temperatura no módulo de carga: +3.6°C.</p>
+            </div>
+
+            <div class="linha-historico">
+                <span>14:31:59</span>
+                <strong class="info-texto">INFO</strong>
+                <p>Telemetria de energia em níveis normais.</p>
+            </div>
+
+            <div class="linha-historico">
+                <span>14:31:45</span>
+                <strong class="info-texto">INFO</strong>
+                <p>Comando de ajuste de atitude concluído.</p>
+            </div>
+        </section>
+
+    </section>
+</main>
+
+<footer class="footer-spaceshield">
+    <span>SPACESHIELD v1.1.0</span>
+
+    <span class="footer-status">SISTEMA OPERACIONAL</span>
+
+    <span>
+        🔗 LINK:
+        <strong>ESTÁVEL</strong>
+    </span>
+
+    <span>
+        📶 UPTIME:
+        <strong id="uptime">00:00:00</strong>
+    </span>
+
+    <span>👤 USUÁRIOS CONECTADOS: 3</span>
+
+    <button class="footer-btn">CENTRO DE CONTROLE</button>
+</footer>
+
+<script src="../javascript/script-index.js"></script>
+</body>
+</html>

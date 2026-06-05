@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@500;600;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #0B1026;
+    color: #F5F7FA;
+    font-family: 'Inter', sans-serif;
+    display: grid;
+    grid-template-rows: 90px 1fr auto;
+    min-height: 100vh;
+    padding: 16px;
+    gap: 16px;
+}
+
+header {
+    justify-content: space-between;
+    background: #111936;
+    border: 1px solid #1f315c;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 24px;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.header-logo h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.header-logo p {
+    margin-top: 4px;
+    font-size: 11px;
+    color: #9BA8C7;
+}
+
+.foto-logo-spaceshield {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.header-info {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.info-box {
+    border-left: 1px solid #1f315c;
+    padding-left: 20px;
+}
+
+.info-box span,
+.usuario span {
+    display: block;
+    font-size: 10px;
+    color: #9BA8C7;
+    margin-bottom: 5px;
+}
+
+.info-box strong {
+    font-size: 15px;
+}
+
+.status {
+    color: #00C853;
+    background: rgba(0, 200, 83, 0.15);
+    padding: 5px 12px;
+    border-radius: 20px;
+}
+
+.usuario {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-left: 1px solid #1f315c;
+    padding-left: 20px;
+}
+
+.usuario img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #00BFFF;
+}
+
+.usuario strong {
+    font-size: 14px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 16px;
+    align-items: start;
+}
+
+.coluna-esquerda {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.menu-spaceshield,
+.card-painel,
+.missao-hero,
+.missao-card,
+.timeline-detalhada {
+    background: #050b18;
+    border: 1px solid #1f315c;
+    border-radius: 14px;
+}
+
+.menu-spaceshield {
+    background: #111936;
+    padding: 14px 10px;
+    overflow: hidden;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu li a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    height: 46px;
+    padding: 0 12px;
+    text-decoration: none;
+    color: #F5F7FA;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.menu li a:hover {
+    background: #16264d;
+}
+
+.menu li.ativo a {
+    background: linear-gradient(90deg, #003a66, #06264a);
+    color: #00BFFF;
+}
+
+.menu li img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.card-painel {
+    padding: 10px;
+}
+
+.card-painel h2 {
+    font-size: 11px;
+    margin: 8px;
+}
+
+.saude-geral {
+    width: 95px;
+    height: 95px;
+    border: 8px solid #00C853;
+    border-radius: 50%;
+    margin: 8px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.saude-geral strong {
+    font-size: 24px;
+}
+
+.saude-geral span {
+    font-size: 8px;
+    color: #9BA8C7;
+}
+
+.sistema p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 9px;
+    border-bottom: 1px solid #1f315c;
+    padding: 4px 0;
+    margin: 0;
+}
+
+.sistema span {
+    color: #00C853;
+}
+
+.conteudo-missao {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.missao-hero {
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.tag-missao {
+    color: #00BFFF;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.missao-hero h2 {
+    color: #00BFFF;
+    font-size: 42px;
+    margin: 8px 0;
+}
+
+.missao-hero p,
+.missao-card p,
+.etapa p {
+    color: #9BA8C7;
+    font-size: 13px;
+}
+
+.missao-status-card {
+    min-width: 180px;
+    background: rgba(0, 200, 83, 0.08);
+    border: 1px solid rgba(0, 200, 83, 0.4);
+    border-radius: 14px;
+    padding: 18px;
+}
+
+.missao-status-card span {
+    font-size: 11px;
+    color: #9BA8C7;
+}
+
+.missao-status-card strong {
+    display: block;
+    color: #00C853;
+    font-size: 24px;
+    margin: 8px 0;
+}
+
+.missao-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.missao-card {
+    padding: 18px;
+}
+
+.missao-card h3,
+.timeline-detalhada h2 {
+    font-size: 14px;
+    margin: 0 0 12px;
+}
+
+.missao-card strong {
+    color: #F5F7FA;
+}
+
+.alerta-missao {
+    border-color: #ff3333;
+    background: rgba(255, 50, 50, 0.08);
+}
+
+.timeline-detalhada {
+    padding: 18px;
+}
+
+.etapa {
+    display: flex;
+    gap: 12px;
+    border-bottom: 1px solid #1f315c;
+    padding: 12px 0;
+}
+
+.bolinha {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    margin-top: 4px;
+    flex-shrink: 0;
+}
+
+.azul {
+    background: #00BFFF;
+}
+
+.verde {
+    background: #00C853;
+}
+
+.vermelho {
+    background: #ff3333;
+}
+
+.footer-spaceshield {
+    margin-top: 16px;
+    height: 42px;
+    background: #0a1228;
+    border: 1px solid #1f315c;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 11px;
+    color: #8f9dbb;
+}
+
+.footer-status,
+.footer-spaceshield strong {
+    color: #00C853;
+}
+
+.footer-btn {
+    background: #072b4d;
+    color: #00BFFF;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 18px;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.footer-btn:hover {
+    background: #0a3d6d;
+}
+
+h1,
+h2,
+h3,
+.status,
+.footer-btn,
+.menu li a {
+    font-family: 'Orbitron', sans-serif;
+}
+
+strong,
+.info-box strong,
+.saude-geral strong,
+#cronometro,
+#hora-brasilia,
+#uptime {
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* MOBILE CORRETO - DASHBOARD */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+        display: block;
+        overflow-x: hidden;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 14px;
+    }
+
+    .header-logo {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .header-info {
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .info-box,
+    .usuario {
+        border-left: none;
+        padding-left: 0;
+    }
+
+    .usuario {
+        justify-content: center;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        width: 100%;
+    }
+
+    .coluna-esquerda,
+    .conteudo-central,
+    .painel-direito {
+        width: 100%;
+    }
+
+    .mapa-orbital {
+        height: 340px;
+    }
+
+    .mapa-conteudo {
+        height: 300px;
+    }
+
+    .telemetria-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline-missao {
+        height: auto;
+        overflow-x: auto;
+    }
+
+    .timeline {
+        min-width: 650px;
+    }
+
+    .painel-direito {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-spaceshield {
+        height: auto;
+        flex-direction: column;
+        gap: 8px;
+        padding: 12px;
+        margin-top: 14px;
+    }
+}
